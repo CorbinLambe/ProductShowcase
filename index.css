@@ -33,14 +33,25 @@ nav {
     max-width: 200px;
     height: 300px;
 }
-.product-description {
+#product-description1 {
 display: none;
 position: absolute;
-top: 50%;
-left: 50%;
+top: 120%;
+left: 20%;
+transform: translate(-40%, -80%);
+color: white;
+background-color: rgba(0, 0, 0, 0.26);
+padding: 10px;
+}
+
+#product-description2 {
+display: none;
+position: absolute;
+top: 120%;
+left: 70%;
 transform: translate(-50%, -50%);
 color: white;
-background-color: rgba(0, 0, 0, 0.5);
+background-color: rgba(0, 0, 0, 0.26);
 padding: 10px;
 }
 
