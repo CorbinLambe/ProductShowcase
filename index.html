@@ -3,44 +3,57 @@
 <head> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Product Showcase</title> 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <title>Product Showcase</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style> 
     /* Add CSS styles here for layout and design */ 
   </style> 
 </head> 
 <body> 
-  <!-- Navigation Menu --> 
-  <div id="navigationMenu"> 
-    <h2>Menu</h2> 
-    <ul> 
-      <li><a href="#home">Home</a></li> 
-      <li><a href="#products">Products</a></li> 
-      <li><a href="#faq">FAQ</a></li> 
-    </ul> 
-  </div> 
+   <!-- Navigation Menu --> 
+   <header class = "header">
+      <div class ="nav" id="nav"> 
+        <h2>Menu</h2> 
+        <ul> 
+          <li><a href="#home">Home</a></li> 
+          <li><a href="#products">Products</a></li> 
+          <li><a href="#FAQ">FAQ</a></li> 
+        </ul> 
+     </div>
+     <button onclick="hideShow()">Hide and Show</button>
+   </header>
+   
  
   <!-- Home Section --> 
   <div id="home"> 
-    <h1>Welcome to Our Product Showcase</h1> 
-    <p>Explore our products and learn more about them.</p> 
+    <h1>Welcome To The Blighted Books, book store!</h1> 
+    <p>We sell a collection of books varying from comics books to encyclopedias. while your here why don't you take
+      a look at our products. Our webpage is still being worked on and will be expanded in the fututre.
+    </p> 
   </div> 
  
   <!-- Product Gallery Section --> 
   <div id="products"> 
     <h2>Our Products</h2> 
-    <div class="product-item"> 
-      <img src="product1.jpg" alt="Product 1"> 
-      <div class="product-description">Product 1 Description</div> 
+    <button id="toggleButton">Toggle Products</button>
+  <div class ="product-gallery">
+    <div class="product-item">
+      <img src="r.jpg" alt="Product 1" class ="hover-image"> 
+      <div class="product-description" id="Product-description1">The start of an epic comic run created by Todd Mcfarlene. A soldier killed by
+        his own goverment comes back to life 10 years after his death he finds himself to be someone elses puppet.
+      </div> 
     </div> 
-    <div class="product-item"> 
-      <img src="product2.jpg" alt="Product 2"> 
-      <div class="product-description">Product 2 Description</div> 
+    <div class="product-item2">
+      <img src="91zWJnJfqjL._SL1500_.jpg" alt="Product 2" class="hover-image"> 
+      <div class="product-description" id="Product-description2">Animal farm created by george orwell is a masterpeice using animals as a metaphor for russians
+        under stalin rule. A farm where the animals take over only to find themselves under a new tyranny.
+      </div> 
     </div> 
   </div> 
  
   <!-- FAQ Section --> 
-  <div id="faq"> 
+  <div id="FAQ"> 
     <h2>FAQ</h2> 
     <div class="faq-item"> 
       <h3>What is the return policy?</h3> 
@@ -50,8 +63,12 @@
       <h3>Do you offer international shipping?</h3> 
       <div class="answer" style="display: none;">Yes, we ship internationally.</div> 
     </div> 
+    <div class="faq-item">
+      <h3>Is shipping free?</h3>
+      <div class="answer" style="display: none;">No, You will need to pay for shipping.</div>
+    </div>
   </div> 
  
-  <script src="app.js"></script> <!-- Link to your JavaScript file --> 
+  <script src="index.js"></script> <!-- Link to your JavaScript file --> 
 </body> 
 </html>
