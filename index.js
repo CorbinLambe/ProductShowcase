@@ -1,6 +1,6 @@
 var div = document.getElementById("nav");
 var display = 1;
-
+//hide or show nav bar
 function hideShow() {
     if (display == 1) {
         $("#nav").hide(100);
@@ -10,13 +10,13 @@ function hideShow() {
         display = 1;
     }
 }
- 
+ //Toggle products visibility
 $(document).ready(function(){
     $("#toggleButton").click(function(){
         $(".product-item, .product-item2").toggle();
     });
 });
-
+//Fade in product descriptions on hover
 $(document).ready(function(){
     $(".product-item").hover(function(){
         $(this).find(".product-description").fadeIn();
@@ -32,3 +32,27 @@ $(document).ready(function(){
         $(this).find(".product-description").fadeOut();
     });
 });
+//Slide toggle for FAQ section
+$(document).ready(function(){
+    $(".faq-item1").click(function(){
+        $(".answer1").slideToggle();
+    });
+});
+
+$(document).ready(function(){
+    $(".faq-item2").click(function(){
+        $(".answer2").slideToggle();
+    });
+});
+
+$(document).ready(function(){
+    $(".faq-item3").click(function(){
+        $(".answer3").slideToggle();
+    });
+});
+
+//swing footer text
+$(".footer").click(function(){
+    $(".names").animate({fontSize:"20px"},1000, "swing", $(".names").animate({fontSize:"80px"},1000));
+});
+
