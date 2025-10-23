@@ -1,23 +1,32 @@
-.header {
-    background-color: #5f2015d6;
+.header { /* remove the top margin from menu */
+    background-color: #7a7a88d6; /* Color for the nav */
     border-bottom: 2px solid black;
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 5px 10px;
 }
-body{
-  background-color: #da9b4ad6;
+#menuTitle {
+    margin-top: 0; /* To remove the blue space above the nav */
+    padding-top: 0.5%; /* re-padds the top to look nice */
 }
-nav {
+body{
+  background-color: #7aa7d4d6; /* Color for the body */
+  margin: 0; /* Used to force the body to not have a margin, allowing nav to spread across the screen */
+}
+#home {
+    margin: 2%; /* Used to re-give the lost margins */
+}
+nav { 
     background-color: white;
     border: 2px solid black;
 }
 #products {
-    background-color: #f4f1f0d6;
+    background-color: #e4d5b4d6; /* Color for the product box */
     padding: 20px;
     border: 2px solid black;
     size :50%;
+    margin: 2%; /* Used to re-give the lost margins */
 }
 .product-item, .product-item2 {
     border: 2px solid black;
@@ -58,3 +67,4 @@ padding: 10px;
 html{
     scroll-behavior: smooth;
 }
+
