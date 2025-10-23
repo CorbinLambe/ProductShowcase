@@ -1,6 +1,6 @@
+// hide or show Nav Bar
 var div = document.getElementById("nav");
 var display = 1;
-//hide or show nav bar
 function hideShow() {
     if (display == 1) {
         $("#nav").hide(100);
@@ -51,8 +51,7 @@ $(document).ready(function(){
     });
 });
 
-//swing footer text
+//swing footer text and increase font size
 $(".footer").click(function(){
     $(".names").animate({fontSize:"20px"},1000, "swing", $(".names").animate({fontSize:"80px"},1000));
 });
-
